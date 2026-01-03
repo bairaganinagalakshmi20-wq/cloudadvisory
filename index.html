@@ -22,7 +22,14 @@
     <a href="contact.html">Contact Page</a>.
 </p>
 <footer class="site-footer">
-  <p>© 2026 CloudAdvisory. All rights reserved.</p>
+  <p>© <span id="current-date"></span> CloudAdvisory. All rights reserved.</p>
 </footer>
+
+<script>
+  const today = new Date();
+  const options = { day: '2-digit', month: 'short', year: 'numeric' };
+  document.getElementById("current-date").innerText =
+    today.toLocaleDateString('en-GB', options);
+</script>
 </body>
 </html>
