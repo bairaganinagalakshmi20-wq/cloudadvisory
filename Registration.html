@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StayMate HOOD PG Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      background: white;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .radio-group {
+      margin-top: 5px;
+    }
+    .radio-group label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .section {
+      margin-top: 25px;
+    }
+    .info {
+      background: #eef3ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>StayMate HOOD PG for Ladies</h1>
+  <p>Electronic City Phase II, Bangalore</p>
+
+  <div class="info">
+    <strong>📌 Important Points:</strong><br>
+    • Rent before 5th<br>
+    • ₹1000 maintenance deduction<br>
+    • 30-day notice mandatory<br>
+    • Gate closes at 10 PM<br><br>
+
+    <strong>🍽️ Food Timings:</strong><br>
+    Morning: 7:30–9:30<br>
+    Afternoon: 12–2<br>
+    Night: 7:30–10
+  </div>
+
+  <form>
+
+    <div class="section">
+      <label>Have you read Terms & Conditions?</label>
+      <div class="radio-group">
+        <input type="radio" name="read" value="yes"> Yes
+        <input type="radio" name="read" value="no"> No
+      </div>
+
+      <label>Do you accept Terms & Conditions?</label>
+      <div class="radio-group">
+        <input type="radio" name="accept" value="yes"> Yes
+        <input type="radio" name="accept" value="no"> No
+      </div>
+
+      <label>If No, reason:</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="section">
+      <label>Upload ID Proof</label>
+      <input type="file">
+
+      <label>Passport Size Photo</label>
+      <input type="file">
+    </div>
+
+    <div class="section">
+      <label>Full Name</label>
+      <input type="text" required>
+
+      <label>Date of Joining</label>
+      <input type="date">
+
+      <label>Date of Birth</label>
+      <input type="date">
+
+      <label>Mobile Number</label>
+      <input type="tel">
+
+      <label>Emergency Contact Number</label>
+      <input type="tel">
+    </div>
+
+    <div class="section">
+      <label>Educational Details</label>
+      <textarea></textarea>
+
+      <label>Occupation</label>
+      <select>
+        <option>Student</option>
+        <option>Work Professional</option>
+        <option>Other</option>
+      </select>
+
+      <label>College/Office Address</label>
+      <textarea></textarea>
+
+      <label>Permanent Address</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="section">
+      <label>Expected Duration</label>
+      <select>
+        <option>Less than 1 month</option>
+        <option>1–3 months</option>
+        <option>6+ months</option>
+      </select>
+
+      <label>Room Sharing Preference</label>
+      <select>
+        <option>1 Sharing</option>
+        <option>2 Sharing</option>
+        <option>3 Sharing</option>
+      </select>
+
+      <label>Allocated Room Number</label>
+      <input type="text">
+
+      <label>Security Deposit</label>
+      <input type="text">
+
+      <label>Monthly Rent</label>
+      <input type="text">
+    </div>
+
+    <div class="section">
+      <label>
+        <input type="checkbox" required>
+        I declare that the information provided is correct
+      </label>
+    </div>
+
+    <button type="submit">Submit Registration</button>
+
+  </form>
+</div>
+
+</body>
+</html>
